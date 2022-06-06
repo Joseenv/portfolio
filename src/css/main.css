@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --background-color-main: #2d333e;
+    --background-color-soft: #374151;
+    --color-main: #43b883;
+    --gradient-main: linear-gradient(90deg, var(--color-main) 42%, #647EFF 80%);
+    --progressbar-color: linear-gradient(90deg, var(--color-main) 50%, #647EFF 72%);
+    --icons-color: rgba(235, 235, 235, 0.6);
+    --shadow-main: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+    --text-color-description: #9ca3af;
+    --text-color-links: rgba(255, 255, 255, 0.87);
+    --text-color-paragraph: rgba(255, 255, 255, 0.87);
+    --text-color-title: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: var(--background-color-main);
+}
+
+body::-webkit-scrollbar {
+    width: .6rem;              
+  }
+  
+body::-webkit-scrollbar-track {
+    background: var(--background-color-main);        
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--text-color-description);
+    border-radius: 8rem;
+}
+
+.about, .projects, .contact {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 8.8rem 2.4rem 0rem 2.4rem;
+    width: 100%;
+}
